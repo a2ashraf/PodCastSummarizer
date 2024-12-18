@@ -5,7 +5,7 @@ from openai import OpenAI
 
 # Function to search for a podcast and extract the podcast ID
 def search_for_podcast(query):
-    api_key = '6fc563c73aca4522814bf704763a774f'
+    api_key = '6fc563c73aca4522814bf704763a774fzzw'
     client = podcast_api.Client(api_key=api_key)
     response = client.search(
         q=query, sort_by_date=1,
@@ -17,7 +17,7 @@ def search_for_podcast(query):
 
 # Function to fetch the transcript using the podcast ID
 def get_podcast_transcript(podcast_id):
-    api_key = '6fc563c73aca4522814bf704763a774f'
+    api_key = '6fc563c73aca4522814bf704763a774fzzw'
     client = podcast_api.Client(api_key=api_key)
     response = client.fetch_episode_by_id(
         id=podcast_id,
